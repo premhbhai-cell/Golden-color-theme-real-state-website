@@ -1,0 +1,360 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Real Estate</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="featured.css">
+</head>
+
+<body>
+<script src="script.js"></script>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="nav-container">
+
+<div class="logo">
+ATELIER LOCUS
+</div>
+
+<nav class="nav">
+
+<a href="#">Properties</a>
+<a href="#">Search</a>
+<a href="#">About</a>
+<a href="#">Calculator</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<button class="nav-btn">
+Inquire Now
+</button>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<span class="tag">Premium Real Estate</span>
+
+<h1>
+Find Your <br>
+<span>Dream Property</span>
+</h1>
+
+<p>
+Curated luxury residences crafted for those who appreciate the extraordinary.
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn-primary">
+Explore Properties
+</button>
+
+<button class="btn-outline">
+Schedule Visit
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- PROPERTY SEARCH -->
+
+<div class="property-search">
+
+<input type="text" placeholder="Location">
+
+<select>
+<option>Any Budget</option>
+<option>₹50L - ₹70L</option>
+<option>₹70L - ₹1Cr</option>
+<option>₹1Cr - ₹2Cr</option>
+</select>
+
+<select>
+<option>Property Type</option>
+<option>Apartment</option>
+<option>Villa</option>
+<option>Plot</option>
+</select>
+
+<button class="search-btn">
+Search
+</button>
+
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
+<!-- feature property section -->
+<!-- Residences Section -->
+    <!-- Residences Section -->
+
+<section id="residences" class="residences">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header-content">
+        <span class="section-label">
+          <span class="label-line"></span>
+          BEST CHOICE
+        </span>
+        <h2 class="section-title">Popular Residences</h2>
+        <p class="section-description">Explore premium properties in Faridabad, India</p>
+      </div>
+
+```
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All Properties</button>
+    <button class="filter-btn" data-filter="villa">Villas</button>
+    <button class="filter-btn" data-filter="apartment">Apartments</button>
+    <button class="filter-btn" data-filter="penthouse">Penthouses</button>
+  </div>
+</div>
+
+<div class="residences-grid">
+
+  <!-- VILLA 1 -->
+  <div class="residence-card" data-category="villa">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=800">
+      <div class="residence-badge">Featured</div>
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹2.3 Cr</div>
+          <h3 class="residence-name">Green Valley Luxury Villa</h3>
+        </div>
+        <div class="residence-rating">⭐ 4.8</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 21C, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">4 Beds</span>
+        <span class="feature">3 Baths</span>
+        <span class="feature">2800 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+  <!-- VILLA 2 -->
+  <div class="residence-card" data-category="villa">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹2.8 Cr</div>
+          <h3 class="residence-name">Royal Palm Villa</h3>
+        </div>
+        <div class="residence-rating">⭐ 4.9</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 46, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">5 Beds</span>
+        <span class="feature">4 Baths</span>
+        <span class="feature">3500 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+  <!-- APARTMENT 1 -->
+  <div class="residence-card" data-category="apartment">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=800">
+      <div class="residence-badge special">Hot Deal</div>
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹78 Lakh</div>
+          <h3 class="residence-name">Omaxe Heights Apartment</h3>
+        </div>
+        <div class="residence-rating">⭐ 4.7</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 79, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">3 Beds</span>
+        <span class="feature">2 Baths</span>
+        <span class="feature">1500 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+  <!-- APARTMENT 2 -->
+  <div class="residence-card" data-category="apartment">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹85 Lakh</div>
+          <h3 class="residence-name">BPTP Parklands</h3>
+        </div>
+        <div class="residence-rating">⭐ 4.6</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 75, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">3 Beds</span>
+        <span class="feature">3 Baths</span>
+        <span class="feature">1700 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+  <!-- APARTMENT 3 -->
+  <div class="residence-card" data-category="apartment">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹92 Lakh</div>
+          <h3 class="residence-name">Puri Pranayam</h3>
+        </div>
+        <div class="residence-rating">⭐ 4.8</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 82, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">2 Beds</span>
+        <span class="feature">2 Baths</span>
+        <span class="feature">1200 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+  <!-- PENTHOUSE 1 -->
+  <div class="residence-card" data-category="penthouse">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹3.6 Cr</div>
+          <h3 class="residence-name">Skyline Penthouse</h3>
+        </div>
+        <div class="residence-rating">⭐ 5.0</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 88, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">4 Beds</span>
+        <span class="feature">4 Baths</span>
+        <span class="feature">4200 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+  <!-- PENTHOUSE 2 -->
+  <div class="residence-card" data-category="penthouse">
+    <div class="residence-image">
+      <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+
+    <div class="residence-info">
+      <div class="residence-header">
+        <div>
+          <div class="residence-price">₹4.1 Cr</div>
+          <h3 class="residence-name">Elite Roof Penthouse</h3>
+        </div>
+        <div class="residence-rating">⭐ 4.9</div>
+      </div>
+
+      <p class="residence-location">
+        Sector 81, Faridabad - India
+      </p>
+
+      <div class="residence-features">
+        <span class="feature">5 Beds</span>
+        <span class="feature">5 Baths</span>
+        <span class="feature">4800 sqft</span>
+      </div>
+
+      <button class="btn-details" onclick="sendDetails(this)">Get Details</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="view-all-container">
+  <button class="btn-view-all">
+    View All Properties
+  </button>
+</div>
+
+  </div>
+</section>
