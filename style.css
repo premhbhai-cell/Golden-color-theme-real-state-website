@@ -44,6 +44,7 @@ gap:25px;
 text-decoration:none;
 color:#111;
 font-weight:500;
+transition:0.3s;
 }
 
 .nav-btn{
@@ -61,7 +62,9 @@ cursor:pointer;
 display:none;
 font-size:28px;
 cursor:pointer;
+z-index:1100;
 }
+
 
 
 

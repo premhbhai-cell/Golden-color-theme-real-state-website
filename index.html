@@ -160,19 +160,13 @@ Search
 <!-- PROPERTY 1 -->
 <div class="residence-card" data-category="villa">
 
-<img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy">
+<img src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600">
 
 <div class="card-info">
-
 <h3>Green Valley Villa</h3>
 <p>Sector 21C, Faridabad</p>
-
 <div class="price">₹2.3 Cr</div>
-
-<button class="details-btn">
-Get Details
-</button>
-
+<button class="details-btn">Get Details</button>
 </div>
 
 </div>
@@ -181,19 +175,13 @@ Get Details
 <!-- PROPERTY 2 -->
 <div class="residence-card" data-category="villa">
 
-<img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy">
+<img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600">
 
 <div class="card-info">
-
 <h3>Royal Palm Villa</h3>
 <p>Sector 46, Faridabad</p>
-
 <div class="price">₹2.8 Cr</div>
-
-<button class="details-btn">
-Get Details
-</button>
-
+<button class="details-btn">Get Details</button>
 </div>
 
 </div>
@@ -202,19 +190,13 @@ Get Details
 <!-- PROPERTY 3 -->
 <div class="residence-card" data-category="apartment">
 
-<img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy">
+<img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=600">
 
 <div class="card-info">
-
 <h3>Omaxe Heights</h3>
 <p>Sector 79, Faridabad</p>
-
 <div class="price">₹78 Lakh</div>
-
-<button class="details-btn">
-Get Details
-</button>
-
+<button class="details-btn">Get Details</button>
 </div>
 
 </div>
@@ -223,19 +205,13 @@ Get Details
 <!-- PROPERTY 4 -->
 <div class="residence-card" data-category="apartment">
 
-<img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy">
+<img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=600">
 
 <div class="card-info">
-
 <h3>BPTP Parklands</h3>
 <p>Sector 75, Faridabad</p>
-
 <div class="price">₹85 Lakh</div>
-
-<button class="details-btn">
-Get Details
-</button>
-
+<button class="details-btn">Get Details</button>
 </div>
 
 </div>
@@ -244,19 +220,13 @@ Get Details
 <!-- PROPERTY 5 -->
 <div class="residence-card" data-category="apartment">
 
-<img src="https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy">
+<img src="https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=600">
 
 <div class="card-info">
-
 <h3>Puri Pranayam</h3>
 <p>Sector 82, Faridabad</p>
-
 <div class="price">₹92 Lakh</div>
-
-<button class="details-btn">
-Get Details
-</button>
-
+<button class="details-btn">Get Details</button>
 </div>
 
 </div>
@@ -265,19 +235,13 @@ Get Details
 <!-- PROPERTY 6 -->
 <div class="residence-card" data-category="penthouse">
 
-<img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy">
+<img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600">
 
 <div class="card-info">
-
 <h3>Skyline Penthouse</h3>
 <p>Sector 88, Faridabad</p>
-
 <div class="price">₹3.6 Cr</div>
-
-<button class="details-btn">
-Get Details
-</button>
-
+<button class="details-btn">Get Details</button>
 </div>
 
 </div>
@@ -287,6 +251,39 @@ Get Details
 </div>
 
 </section>
+
+
+<script>
+
+const filterBtns = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".residence-card");
+
+filterBtns.forEach(btn => {
+
+btn.addEventListener("click", () => {
+
+filterBtns.forEach(b => b.classList.remove("active"));
+btn.classList.add("active");
+
+const filter = btn.getAttribute("data-filter");
+
+cards.forEach(card => {
+
+const category = card.getAttribute("data-category");
+
+if (filter === "all" || filter === category) {
+card.style.display = "block";
+} else {
+card.style.display = "none";
+}
+
+});
+
+});
+
+});
+
+</script>
 
 
 <!-- PARTNER SECTION -->
@@ -1266,3 +1263,21 @@ target="_blank">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</section>
+
+<script>
+
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+toggle.addEventListener("click", function(){
+nav.classList.toggle("active");
+});
+
+</script>
+
+</body>
+</html>

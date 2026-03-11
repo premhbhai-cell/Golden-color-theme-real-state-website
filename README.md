@@ -24,6 +24,9 @@ whatsapp buttom added
 <br>
 conected nav with section
 <br>
+all problem solve till here 
+<br>
+
 
 
 

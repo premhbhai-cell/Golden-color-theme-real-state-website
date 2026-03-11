@@ -1,48 +1,28 @@
-const buttons = document.querySelectorAll(".filter-btn");
-const cards = document.querySelectorAll(".residence-card");
 
-buttons.forEach(button => {
+// HEADER SCROLL EFFECT
 
-button.addEventListener("click", () => {
+const header = document.querySelector(".header");
 
-buttons.forEach(btn => btn.classList.remove("active"));
-button.classList.add("active");
+window.addEventListener("scroll", function(){
 
-const filter = button.dataset.filter;
-
-cards.forEach(card => {
-
-if(filter === "all"){
-card.style.display = "block";
-}
-else{
-card.style.display =
-card.dataset.category === filter ? "block" : "none";
-}
-
-});
-
-});
-
-});
-
-
-
-window.addEventListener("scroll",function(){
-
-let header = document.querySelector(".header");
-
+if(header){
 if(window.scrollY > 50){
 header.classList.add("scrolled");
-}
-else{
+}else{
 header.classList.remove("scrolled");
+}
 }
 
 });
+
+
+
+// MOBILE MENU TOGGLE
 
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
+
+if(toggle && nav){
 
 toggle.addEventListener("click", function(){
 
@@ -50,4 +30,4 @@ nav.classList.toggle("active");
 
 });
 
-
+}
