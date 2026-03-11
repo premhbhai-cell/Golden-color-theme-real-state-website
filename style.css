@@ -1621,3 +1621,64 @@ grid-template-columns:1fr;
 }
 
 }
+
+
+/* whatsapp buttom intregeted */
+
+.whatsapp-float{
+
+position:fixed;
+right:20px;
+bottom:30px;
+background:#25D366;
+color:white;
+width:55px;
+height:55px;
+border-radius:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,0.25);
+z-index:9999;
+transition:0.3s;
+
+}
+
+/* hover */
+
+.whatsapp-float:hover{
+
+background:#EFBF04;
+color:black;
+
+}
+
+/* text bubble */
+
+.whatsapp-text{
+
+position:absolute;
+right:65px;
+background:white;
+color:black;
+padding:8px 12px;
+border-radius:6px;
+font-size:13px;
+white-space:nowrap;
+opacity:0;
+transform:translateY(5px);
+transition:0.3s;
+pointer-events:none;
+
+}
+
+/* show text on hover */
+
+.whatsapp-float:hover .whatsapp-text{
+
+opacity:1;
+transform:translateY(0);
+
+}
