@@ -927,3 +927,156 @@ document.getElementById("totalPayment").innerHTML = "₹ " + totalPayment.toLoca
 }
 
 </script>
+
+
+<!-- contact form with map -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Property Dealers</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-heading">
+<p class="mini-title">— GET IN TOUCH</p>
+<h2>Contact Top <span>Property Dealers</span> in India</h2>
+</div>
+
+<div class="contact-grid">
+
+<!-- FORM -->
+
+<div class="contact-form">
+
+<h3>Book Free Property Consultation</h3>
+
+<form id="propertyForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="email" id="email" placeholder="Email Address">
+
+<select id="budget">
+<option>Select Budget Range</option>
+<option>10L - 30L</option>
+<option>30L - 60L</option>
+<option>60L - 1Cr</option>
+<option>1Cr+</option>
+</select>
+
+<select id="type">
+<option>Property Type</option>
+<option>Villa</option>
+<option>Apartment</option>
+<option>Plot</option>
+<option>Farmhouse</option>
+<option>Commercial</option>
+</select>
+
+<select id="city">
+
+<option value="">Preferred City (NCR)</option>
+
+<option>New Delhi</option>
+<option>Gurugram</option>
+<option>Noida</option>
+<option>Greater Noida</option>
+<option>Faridabad</option>
+<option>Ghaziabad</option>
+<option>Sonipat</option>
+<option>Bahadurgarh</option>
+<option>Bhiwadi</option>
+<option>Manesar</option>
+<option>Palwal</option>
+<option>Rewari</option>
+<option>Rohtak</option>
+
+</select>
+
+
+<textarea id="message" placeholder="Tell us about your property requirements..."></textarea>
+
+<button type="submit">Send Inquiry</button>
+
+</form>
+
+</div>
+
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info">
+
+<div class="info-box">
+<h4>Call Us</h4>
+<p>+91 98765 43210</p>
+<p>+91 87654 32109</p>
+</div>
+
+<div class="info-box">
+<h4>Email Us</h4>
+<p>info@luxestates.in</p>
+</div>
+
+<div class="info-box">
+<h4>Visit Us</h4>
+<p>Connaught Place, New Delhi</p>
+</div>
+
+<div class="map">
+<iframe 
+src="https://maps.google.com/maps?q=connaught%20place%20delhi&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<script>
+
+document.getElementById("propertyForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let email = document.getElementById("email").value;
+let budget = document.getElementById("budget").value;
+let type = document.getElementById("type").value;
+let city = document.getElementById("city").value;
+let message = document.getElementById("message").value;
+
+let text = `New Property Inquiry%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Email: ${email}%0A
+Budget: ${budget}%0A
+Property Type: ${type}%0A
+City: ${city}%0A
+Message: ${message}`;
+
+let whatsapp = "https://wa.me/918130112531?text=" + text;
+
+window.open(whatsapp, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
