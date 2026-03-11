@@ -745,3 +745,184 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* value we provide */
+/* ===== VALUE SECTION ===== */
+
+.value-section{
+width:100%;
+padding:90px 6%;
+background:#f7f8fa;
+font-family:sans-serif;
+}
+
+.value-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:70px;
+}
+
+/* ===== LEFT IMAGE ===== */
+
+.value-image{
+flex:1;
+}
+
+.value-image img{
+width:100%;
+max-width:480px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+display:block;
+}
+
+/* ===== RIGHT CONTENT ===== */
+
+.value-content{
+flex:1;
+}
+
+.value-title{
+font-size:38px;
+margin-bottom:10px;
+font-weight:600;
+}
+
+.value-desc{
+color:#666;
+margin-bottom:30px;
+line-height:1.6;
+max-width:480px;
+}
+
+/* ===== ACCORDION ITEM ===== */
+
+.accordion-item{
+background:#fff;
+border:2px solid #eee;
+border-radius:14px;
+margin-bottom:15px;
+overflow:hidden;
+transition:0.3s;
+cursor:pointer;
+}
+
+.accordion-item:hover{
+border-color:#d6a900;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ===== HEADER ===== */
+
+.accordion-header{
+padding:18px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+font-weight:600;
+font-size:16px;
+}
+
+/* ===== LEFT HEADER PART ===== */
+
+.header-left{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+/* ===== START ICON ===== */
+
+.icon-box{
+width:42px;
+height:42px;
+background:#fff4cc;
+color:#d6a900;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+font-size:18px;
+flex-shrink:0;
+}
+
+/* ===== PLUS BUTTON ===== */
+
+.plus-box{
+width:36px;
+height:36px;
+background:#d6a900;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:8px;
+font-size:20px;
+font-weight:600;
+transition:0.3s;
+}
+
+/* rotate when open */
+
+.accordion-item.active .plus-box{
+transform:rotate(45deg);
+}
+
+/* ===== CONTENT ===== */
+
+.accordion-content{
+max-height:0;
+overflow:hidden;
+padding:0 20px;
+color:#666;
+line-height:1.6;
+transition:max-height .35s ease,padding .35s ease;
+}
+
+.accordion-item.active .accordion-content{
+max-height:200px;
+padding:15px 20px 20px;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+.value-container{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.value-desc{
+margin:auto;
+margin-bottom:30px;
+}
+
+.accordion-header{
+text-align:left;
+}
+
+}
+
+@media(max-width:600px){
+
+.value-title{
+font-size:28px;
+}
+
+.icon-box{
+width:36px;
+height:36px;
+font-size:16px;
+}
+
+.plus-box{
+width:32px;
+height:32px;
+font-size:18px;
+}
+
+}

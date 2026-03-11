@@ -401,3 +401,125 @@ Get Details
 </div>
 
 </section>
+
+<!-- value we provide -->
+
+<section class="value-section">
+
+<div class="value-container">
+
+<div class="value-image">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900" alt="">
+</div>
+
+<div class="value-content">
+
+<h2 class="value-title">Value We Give To You</h2>
+
+<p class="value-desc">
+We always ready to help by providing the best services for you.
+We believe a good place to live can make your life better.
+</p>
+
+<div class="accordion">
+
+<!-- ITEM 1 -->
+
+<div class="accordion-item">
+
+<div class="accordion-header">
+
+<div class="header-left">
+<div class="icon-box">🏦</div>
+<span>Best interest rates on the market</span>
+</div>
+
+<div class="plus-box">+</div>
+
+</div>
+
+<div class="accordion-content">
+<p>
+We provide competitive interest rates and flexible financing options
+to help buyers purchase property easily.
+</p>
+</div>
+
+</div>
+
+<!-- ITEM 2 -->
+
+<div class="accordion-item">
+
+<div class="accordion-header">
+
+<div class="header-left">
+<div class="icon-box">📊</div>
+<span>Prevent unstable prices</span>
+</div>
+
+<div class="plus-box">+</div>
+
+</div>
+
+<div class="accordion-content">
+<p>
+We analyze property trends to make sure you invest in stable locations
+with long term growth.
+</p>
+</div>
+
+</div>
+
+<!-- ITEM 3 -->
+
+<div class="accordion-item">
+
+<div class="accordion-header">
+
+<div class="header-left">
+<div class="icon-box">💰</div>
+<span>Best prices on the market</span>
+</div>
+
+<div class="plus-box">+</div>
+
+</div>
+
+<div class="accordion-content">
+<p>
+Through our strong developer network we provide the best property deals available.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+document.querySelectorAll(".accordion-header").forEach(header => {
+
+header.addEventListener("click", function(){
+
+const item = this.parentElement;
+
+document.querySelectorAll(".accordion-item").forEach(el=>{
+if(el !== item){
+el.classList.remove("active");
+}
+});
+
+item.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+</section>
