@@ -8,4 +8,7 @@ added value section
 <br>
 add easy contact section
 <br>
+testimonial / reviews section 
+<br>
+
 

@@ -620,3 +620,189 @@ Follow
 </div>
 
 </section>
+
+
+<!-- testimonial / review section -->
+
+
+<section class="testimonial-section">
+
+<h2 class="testimonial-title">What Our Clients Say</h2>
+<p class="testimonial-sub">
+Real stories from real people who found their dream homes with us
+</p>
+
+<div class="testimonial-slider">
+
+<div class="testimonial-track">
+
+<!-- REVIEW 1 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"Buying my first flat in Gurgaon was easy with their help.
+Everything was transparent and smooth."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<div>
+<h4>Rahul Sharma</h4>
+<span>Apartment Owner</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 2 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"Professional team and amazing service. They helped me find
+the perfect villa within my budget."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<div>
+<h4>Pooja Verma</h4>
+<span>Villa Owner</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 3 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"The property suggestions were exactly what I wanted.
+Highly recommended real estate consultants."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/men/55.jpg">
+<div>
+<h4>Amit Singh</h4>
+<span>Flat Owner</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 4 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"They made my property buying journey stress-free.
+Great communication and support."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/women/60.jpg">
+<div>
+<h4>Neha Gupta</h4>
+<span>Home Owner</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 5 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"I loved their service and the way they explained
+every detail before closing the deal."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/men/75.jpg">
+<div>
+<h4>Rohit Mehta</h4>
+<span>Apartment Buyer</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 6 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"The team helped me find a luxury apartment in Faridabad.
+Great experience overall."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/women/21.jpg">
+<div>
+<h4>Anjali Kapoor</h4>
+<span>Penthouse Owner</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 7 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"Very reliable real estate company. They guided me
+through the entire process."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/men/81.jpg">
+<div>
+<h4>Vikram Malhotra</h4>
+<span>Property Investor</span>
+</div>
+</div>
+</div>
+
+<!-- REVIEW 8 -->
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+
+<p>
+"From site visits to paperwork everything was handled
+professionally."
+</p>
+
+<div class="client">
+<img src="https://randomuser.me/api/portraits/women/35.jpg">
+<div>
+<h4>Priya Nair</h4>
+<span>Villa Owner</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<script>
+
+const track = document.querySelector(".testimonial-track")
+
+let position = 0
+
+function slideTestimonials(){
+
+position -= 320
+
+if(Math.abs(position) >= track.scrollWidth/2){
+position = 0
+}
+
+track.style.transform = `translateX(${position}px)`
+
+}
+
+setInterval(slideTestimonials,2500)
+
+</script>
