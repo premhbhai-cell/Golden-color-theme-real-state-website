@@ -6,3 +6,6 @@ added partner section and fix the scroll anitmaition mistake
 <br>
 added value section
 <br>
+add easy contact section
+<br>
+
