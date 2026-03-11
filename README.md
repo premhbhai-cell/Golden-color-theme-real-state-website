@@ -18,6 +18,9 @@ contact form with map add
 <br>
 why chosse us
 <br>
+footer section added
+<br>
+
 
 
 
