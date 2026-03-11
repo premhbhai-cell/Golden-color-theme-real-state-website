@@ -16,6 +16,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html{
+scroll-behavior:smooth;
+}
+</style>
 
 </head>
 
@@ -37,20 +42,25 @@ ATELIER LOCUS
 </div>
 
 <nav class="nav">
-<a href="#">Properties</a>
-<a href="#">Search</a>
-<a href="#">About</a>
-<a href="#">Calculator</a>
-<a href="#">Contact</a>
+<a href="#properties">Properties</a>
+<a href="#search">Search</a>
+<a href="#about">About</a>
+<a href="#calculator">Calculator</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<button class="nav-btn">
+
+<a href="https://wa.me/918130112531?text=Hello%2C%20I%20am%20looking%20for%20property%20options.%20Could%20you%20please%20share%20available%20properties%20with%20their%20locations%20and%20budget%20ranges%3F" 
+target="_blank" 
+class="nav-btn">
 Inquire Now
-</button>
+</a>
+
 
 </div>
 
 </header>
+
 
 
 
@@ -90,7 +100,9 @@ Schedule Visit
 
 <!-- PROPERTY SEARCH -->
 
-<div class="property-search">
+<!-- PROPERTY SEARCH -->
+
+<div class="property-search" id="search" style="scroll-margin-top:120px;">
 
 <input type="text" placeholder="Location">
 
@@ -117,10 +129,13 @@ Search
 </section>
 
 
+</section>
+
+
 
 <!-- FEATURED PROPERTIES -->
 
-<section class="residences">
+<section class="residences" id="Properties">
 
 <div class="container">
 
@@ -545,7 +560,7 @@ item.classList.toggle("active");
 
 <!-- easy contact us  -->
 
-<section class="contact-section">
+<section class="contact-section" id="about">
 
 <div class="contact-container">
 
@@ -828,7 +843,7 @@ setInterval(slideTestimonials,2500)
 
 <!-- emi calculater section -->
 
-<section class="emi-section">
+<section class="emi-section" id="calculator">
 
 <h2 class="emi-title">Property EMI Calculator</h2>
 
@@ -931,17 +946,7 @@ document.getElementById("totalPayment").innerHTML = "₹ " + totalPayment.toLoca
 
 <!-- contact form with map -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Contact Property Dealers</title>
-<link rel="stylesheet" href="contact.css">
-</head>
-
-<body>
-
-<section class="contact-section">
+<section class="contact-section" id="contact">
 
 <div class="container">
 
@@ -1077,9 +1082,6 @@ window.open(whatsapp, "_blank");
 });
 
 </script>
-
-</body>
-</html>
 
 <!-- why choose us -->
 

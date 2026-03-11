@@ -22,6 +22,9 @@ footer section added
 <br>
 whatsapp buttom added
 <br>
+conected nav with section
+<br>
+
 
 
 
