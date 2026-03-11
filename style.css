@@ -430,3 +430,202 @@ font-size:28px;
 }
 
 }
+
+.partners{
+width:100%;
+padding:70px 0;
+background:#ffffff;
+overflow:hidden;
+}
+
+.partners-container{
+width:90%;
+margin:auto;
+text-align:center;
+}
+
+.partners-title{
+font-size:34px;
+margin-bottom:40px;
+font-weight:600;
+}
+
+.logo-slider{
+width:100%;
+overflow:hidden;
+position:relative;
+}
+
+.logo-track{
+display:flex;
+gap:60px;
+animation:scroll 30s linear infinite;
+}
+
+.logo-track img{
+height:70px;
+width:auto;
+object-fit:contain;
+filter:grayscale(100%);
+transition:0.3s;
+}
+
+.logo-track img:hover{
+filter:grayscale(0);
+transform:scale(1.1);
+}
+
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.logo-track{
+gap:40px;
+}
+
+.logo-track img{
+height:50px;
+}
+
+.partners-title{
+font-size:26px;
+}
+
+}
+
+
+/* ===== Partners Section ===== */
+
+.partners{
+width:100%;
+padding:70px 0;
+background:#ffffff;
+text-align:center;
+overflow:hidden;
+font-family:sans-serif;
+}
+
+.partners-title{
+font-size:32px;
+margin-bottom:50px;
+font-weight:600;
+}
+
+/* ===== Slider ===== */
+
+.slider{
+width:100%;
+overflow:hidden;
+}
+
+.slide-track{
+display:flex;
+align-items:center;
+gap:40px;
+animation:scroll 30s linear infinite;
+}
+
+/* ===== Partner Card ===== */
+
+.partner-card{
+width:220px;
+background:#ffffff00;
+border-radius:12px;
+padding:20px 10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== Round Image ===== */
+
+.partner-card img{
+
+width:120px;
+height:120px;
+object-fit:cover;
+
+border-radius:50%;
+
+display:block;
+margin:0 auto 15px;
+
+/* 3D shadow */
+
+box-shadow:
+0 12px 20px rgba(0,0,0,0.18),
+0 6px 8px rgba(0,0,0,0.12);
+
+transition:0.35s;
+}
+
+/* Hover animation */
+
+.partner-card img:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,0.25),
+0 10px 12px rgba(0,0,0,0.18);
+
+}
+
+/* ===== Text ===== */
+
+.partner-card h4{
+
+font-size:18px;
+font-weight:500;
+margin-top:5px;
+
+}
+
+/* ===== Scroll Animation ===== */
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width:768px){
+
+.partners-title{
+font-size:26px;
+}
+
+.partner-card{
+width:180px;
+}
+
+.partner-card img{
+width:90px;
+height:90px;
+}
+
+.partner-card h4{
+font-size:15px;
+}
+
+.slide-track{
+gap:25px;
+}
+
+}
