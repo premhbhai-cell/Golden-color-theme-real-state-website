@@ -1151,3 +1151,102 @@ margin:0;
 font-size:13px;
 color:#888;
 }
+
+
+/* emi calculater */
+
+.emi-section{
+padding:100px 6%;
+background:#f7f8fa;
+font-family:sans-serif;
+text-align:center;
+}
+
+.emi-title{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.emi-box{
+max-width:1000px;
+margin:auto;
+display:flex;
+gap:40px;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.emi-inputs{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.input-group{
+display:flex;
+flex-direction:column;
+text-align:left;
+}
+
+.input-group label{
+margin-bottom:6px;
+font-weight:600;
+}
+
+.input-group input{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+.emi-btn{
+margin-top:10px;
+padding:12px;
+background:#EFBF04;
+border:none;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+.emi-results{
+flex:1;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+align-content:center;
+}
+
+.result-box{
+background:#fafafa;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.result-box h4{
+margin-bottom:10px;
+font-size:16px;
+}
+
+.result-box p{
+font-size:22px;
+font-weight:700;
+color:#EFBF04;
+}
+
+@media(max-width:800px){
+
+.emi-box{
+flex-direction:column;
+}
+
+.emi-results{
+grid-template-columns:1fr;
+}
+
+}
